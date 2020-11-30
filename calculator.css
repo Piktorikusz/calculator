@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.container{
+    background: rgb(214, 210, 210);
+    border-color: rgb(122, 119, 119);
+    width: 400px;
+    margin: auto;
+}
+.display{
+    width: 90%;
+    background-color:white;
+    height: 50px;
+    font-size: 48px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 4px;
+    padding: 1rem;
+}
+.buttons{
+    border-color: lightgrey;
+    max-width: 400px;
+    margin: 4px;
+    display:grid;
+    flex-wrap: wrap;
+    grid-gap: 4px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas: 
+        "plus minus times divide"
+        "seven eight nine equal"
+        "four five six equal"
+        "one two three equal"
+        "zero decimal clear equal";
+}
+button{
+    flex: 1 25%;
+    padding: 15px;
+    font-size: 26px;
+    margin: 2px;
+}  
+.btn-one {
+    grid-area: one;
+}
+.btn-two {
+    grid-area: two;
+}
+.btn-three {
+    grid-area: three;
+}
+.btn-four {
+    grid-area: four;
+}
+.btn-five {
+    grid-area: five;
+}
+.btn-six {
+    grid-area: six;
+}
+.btn-seven {
+    grid-area: seven;
+}
+.btn-eight {
+    grid-area: eight;
+}
+.btn-nine {
+    grid-area: nine;
+}
+.btn-zero {
+    grid-area: zero;
+}
+.btn-decimal {
+    grid-area: decimal;
+}
+.btn-clear {
+    grid-area: clear;
+}
+.btn-equal {
+    grid-area: equal;
+    background-color: blue;
+}
+.btn-plus {
+    background-color: grey;
+    grid-area: plus;
+}
+.btn-minus {
+    background-color: grey;
+    grid-area: minus;
+}
+.btn-times {
+    background-color: grey;
+    grid-area: times;
+}
+.btn-divide {
+    background-color: grey;
+    grid-area: divide;
+}
